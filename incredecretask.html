@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body {
+          
+            
+            text-align: center;
+           
+           
+            
+        }
+        #Tejas{ background-color:antiquewhite;font-size: xx-large;
+            padding-top: 80px;
+            border: groove;
+            border-width: 10px;
+            border-color: burlywood;
+            width: 600px;
+            height: 400px;
+            
+        }
+        #calculate{font-size: 100px; font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;}
+        Button{ font-size: xx-large; }
+    </style>
+</head>
+
+<body>
+    <div id="Tejas">
+        <span id="calculate"></span>
+        <div>
+            <button onclick="UP()">Increment</button>
+            <button onclick="reset()">Reset</button>
+            <button onclick="DOWN()">Decrement</button>
+        </div>
+    </div>
+
+    <script>
+        let data = 0;
+        document.getElementById("calculate").innerText = data;
+
+        function UP() {
+            data = ++data;
+            document.getElementById("calculate").innerText = data;
+
+            if (data > 0) {
+                document.getElementById("calculate").style.color = "blue";
+            }
+            else if (data == 0) {
+                document.getElementById("calculate").style.color = "black";
+            }
+        }
+        function DOWN() {
+            data = --data;
+            document.getElementById("calculate").innerText = data;
+
+            if (data < 0) {
+                document.getElementById("calculate").style.color = "chocolate";
+            }
+            else if (data == 0) {
+                document.getElementById("calculate").style.color = "black";
+            }
+
+        }
+
+        function reset() {
+            data = 0;
+            document.getElementById("calculate").innerText = data;
+            document.getElementById("calculate").style.color = "black";
+        }
+    </script>
+</body>
+
+</html>

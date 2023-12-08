@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body><form action="">
+    <input type="number" name="" id="Tej" >
+    <button type="button" onclick="good()">Click</button>
+</form>
+<span id="print"></span>
+<script>
+    function good(){
+        let first=document.getElementById("Tej").value;
+        first=Number.parseInt(first);
+        if(first % 11==0 || first % 11==1){
+            document.getElementById("print").innerHTML="I am special";
+        
+        }else{document.getElementById("print").innerHTML="Invalid";
+    }
+    }
+</script>
+</body>
+</html>

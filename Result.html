@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{background-image: url(/images/czNmcy1wcml2YXRlL3Jhd3BpeGVsX2ltYWdlcy93ZWJzaXRlX2NvbnRlbnQvbHIvdjk5Ni0wMDkuanBn.webp);
+        
+        }
+
+        
+        
+        
+        
+    </style>
+</head>
+
+<body><fieldset><Legend>Student Result</Legend> <br>
+    <form>
+        Enter Marks: <input type="text" name="" id="Sub_1" placeholder="English"><br><br>
+        Enter Marks: <input type="text" name="" id="Sub_2" placeholder="Maths"><br><br>
+        Enter Marks: <input type="text" name="" id="Sub_3" placeholder="Science"><br><br>
+        Enter Marks: <input type="text" name="" id="Sub_4" placeholder="History&Geography"><br><br>
+        Enter Marks: <input type="text" name="" id="Sub_5" placeholder="Hindi&Sanskrit"><br><br>
+        <button type="button" onclick="Solve()">Submit</button><br>
+    </form>
+</fieldset>
+
+
+    <script >
+        function  Solve() {
+            let Sub1 = document.getElementById('Sub_1').value;
+    
+            Sub_1 = Number.parseInt(Sub1);
+           
+            let Sub2 = document.getElementById('Sub_2').value;
+            Sub_2 = Number.parseInt(Sub2);
+            let Sub3 = document.getElementById('Sub_3').value;
+            Sub_3 = Number.parseInt(Sub3);
+            let Sub4 = document.getElementById('Sub_4').value;
+            Sub_4 = Number.parseInt(Sub4);
+            let Sub5 = document.getElementById('Sub_5').value;
+            Sub_5 = Number.parseInt(Sub5);
+            let total = (Sub_1 + Sub_2 + Sub_3 + Sub_4 + Sub_5) / 500 * 100;
+
+            if (total >= 85) {
+                document.write(`Your Percentage is ${total}% And Your grade is A`);
+            }
+            else if (total >= 70 && total < 85) {
+
+                document.write(`Your Percentage is ${total}%  And Your grade is B`);
+
+            }
+            else if (total >= 50 && total < 70) {
+                document.write(`Your Percentage is ${total}% And Your grade is C`);
+            }
+            else if (total >= 35 && total < 50) {
+                document.write(`Your Percentage is ${total}% And Your grade is D`);
+            }
+            else{
+                document.write(`Your Percentage is ${total}% And Your grade is E`);
+            }
+        }
+
+    </script>
+</body>
+
+</html>

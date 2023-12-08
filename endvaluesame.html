@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" id="Tej_1">
+        <input type="number" id="Tej_2">
+        <button type="button" onclick="Good()">Click</button>
+    </form>
+    <script>
+        function Good(){
+        let data_1=document.getElementById("Tej_1").value;
+        let data_2=document.getElementById("Tej_2").value;
+        data_1=Number.parseInt(data_1);
+        data_2=Number.parseInt(data_2);
+        data_1= data_1 %10;
+        data_2= data_2 %10;
+
+        if(data_1 == data_2){
+        alert('The Numbers Have Same End');
+        }
+        else{
+            alert('The Numbers Have Differet End');
+        }
+    }
+    </script>
+</body>
+</html>

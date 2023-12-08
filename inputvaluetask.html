@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <form action="">
+        <input type="number" name="" id="first">
+        <button type="button" onclick="print()" value="click">Submit</button>
+    </form>
+     <span id="ok"></span> 
+    <script>
+        function print(){
+        //     document.getElementById("first").value;
+        //    let first = Number.parseInt("first");
+        //     document.write()
+            // 
+               let data = document.getElementById("first").value;
+               data=parseInt(data);
+               document.getElementById("ok").innerHTML=data;
+
+            
+            // }
+            // if(first=Text){
+            //     document.getElementById("ok").innerHTML="Invalid";
+            // }
+
+
+        }
+    </script>
+</body>
+</html>
